@@ -6,10 +6,17 @@
   color: white;
   margin: 0;
   padding: 0;
+  opacity: 0.9;
 }
 
 html {
   background-color: black;
+  opacity: 1;
+}
+
+h2 {
+  font-size: 36px;
+  opacity: 1;
 }
 
 /* nav rules */
@@ -19,13 +26,15 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  height: 69px;
+  height: 49px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
   padding-left: 30px;
+  background-color: black;
   border: 1px solid white;
+  z-index: 15;
 }
 
 .nav-links {
@@ -42,4 +51,37 @@ nav {
 .logo-mini {
   height: fit-content;
   font-size: 36px;
+}
+
+/* splash rules */
+
+.splash {
+  position: relative;
+  top: 99px;
+  height: 500px;
+  width: 850px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1509130298739-651801c76e96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-position: center;
+  border: 1px solid white;
+}
+
+.splash-banner {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.9;
+  background-color: black;
+}
+
+.splash-banner h2 {
+  text-align: center;
+}
+
+.splash-banner h3 {
+  text-align: center;
 }
