@@ -34,6 +34,7 @@ nav {
   padding-left: 30px;
   background-color: black;
   border: 1px solid white;
+  opacity: 1;
   z-index: 15;
 }
 
@@ -57,14 +58,16 @@ nav {
 
 .splash {
   position: relative;
-  top: 99px;
+  top: 69px;
   height: 500px;
-  width: 850px;
+  width: 90%;
+  max-width: 1050px;
   margin: auto;
   display: flex;
   align-items: center;
   background-image: url(https://images.unsplash.com/photo-1509130298739-651801c76e96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
   background-position: center;
+  opacity: 1;
   border: 1px solid white;
 }
 
@@ -84,4 +87,39 @@ nav {
 
 .splash-banner h3 {
   text-align: center;
+}
+
+/* products rules */
+
+#products {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  width: 90%;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 27%;
+  min-width: 260px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #101010;
+}
+
+.product img {
+  width: 250px;
+  height: 175px;
+}
+
+.product h3 {
+  text-align: center;
+  margin: 10px;
 }
