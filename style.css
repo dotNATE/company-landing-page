@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: white;
+  text-align: center;
   margin: 0;
   padding: 0;
   opacity: 0.9;
@@ -81,20 +82,11 @@ nav {
   background-color: black;
 }
 
-.splash-banner h2 {
-  text-align: center;
-}
-
-.splash-banner h3 {
-  text-align: center;
-}
-
 /* products rules */
 
 #products {
   position: relative;
   top: 100px;
-  text-align: center;
   width: 90%;
   max-width: 1050px;
   margin: auto;
@@ -120,6 +112,48 @@ nav {
 }
 
 .product h3 {
-  text-align: center;
   margin: 10px;
+}
+
+/* team rules */
+
+#team {
+  position: relative;
+  top: 120px;
+  width: 90%;
+  max-width: 1050px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#team h2 {
+  margin: 10px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 255px;
+  min-width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  background-color: #101010;
+}
+
+.team-member img {
+  width: 90%;
+}
+
+.team-member h3 {
+  width: 100%;
+  height: auto;
 }
